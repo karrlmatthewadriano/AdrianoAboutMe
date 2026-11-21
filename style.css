@@ -1,0 +1,174 @@
+
+body {
+    font-family: 'IBM Plex Sans', Arial, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    background-color: #EDF3F5;
+    color: #173B57;
+}
+
+h1 {
+    font-family: 'Redaction 35', Georgia, serif;
+    font-size: 2.5rem;
+    line-height: 1.3;
+    color: #173B57;
+}
+
+h2 {
+    font-family: 'VT323', monospace;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #173B57;
+    border-bottom: 2px solid #6F9DB8;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+	font-family: 'VT323', monospace;
+	font-weight: 400;
+	font-size: 2rem;
+	color: #173B57;
+}
+
+header {
+    background-color: #D4E3EB;
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid #C1D5E0;
+    border-radius: 1.25rem;
+}
+
+nav {
+	background-color: #173B57;
+	padding: 0.75rem;
+	margin: 1rem;
+	border-radius: 1rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a{
+	display: block;
+	font-family: 'VT323', monospace;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: #EDF3F5;
+	padding: 0.75rem 1rem;
+	border-radius: 0.5rem;
+}
+	
+.navigation a:hover {
+	background-color: #6F9DB8;
+	color: #173B57;
+}
+
+footer {
+    background-color: #173B57;
+    color: #EDF3F5;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+main {
+    max-width: 60rem;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+section {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border: 1px solid #D4E3EB;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.project-image {
+    margin: 1rem 0 1.5rem;
+}
+
+.project-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 2px solid #D4E3EB;
+    border-radius: 0.75rem;
+}
+
+.project-image figcaption {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: #6F9DB8;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-photo {
+    width: 12rem;
+    height: 12rem;
+    background-color: #6F9DB8;
+    border: 2px solid #173B57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+}
+
+.about-text {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-photo {
+        width: 10rem;
+        height: 10rem;
+        align-self: center;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    main {
+        padding: 0.75rem;
+    }
+
+	nav {
+		margin: 0.75rem;
+		padding: 0.5rem;
+	}
+	
+	.navigation {
+		gap: 0.25rem;
+	}
+	
+	.navigation a {
+		font-size: 1.25rem;
+		padding: 0.5rem 0.75rem;
+	}
+}
